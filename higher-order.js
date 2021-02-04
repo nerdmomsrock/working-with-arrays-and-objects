@@ -97,8 +97,12 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 
 //Code Here
 let myStrongest = monstersInYourPocket.filter(function(element, index, array){
-  return monstersInYourPocket.CP > 200;
+  if(monstersInYourPocket[CP] > 200) {
+      return monstersInYourPocket[monster]
+  }
+
 });
+console.log(myStrongest)
 
 
 
@@ -137,10 +141,4 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal = purchases.reduce (function(curElement, curIndex){
-  if (purchases.owner === "Bob") {
-    return sum(purchases.price())
-  }
-});
-
-
+  
