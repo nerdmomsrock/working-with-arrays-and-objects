@@ -51,6 +51,16 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater () {
+  for (let key in employees) {
+    if (employees[firstName] === "Theo"){
+      delete employees[firstName];
+    }
+    if (employees[firstName] === "Lorie"){
+      employees[department].map("HR");
+    }
+  }
+}
 
 
 
