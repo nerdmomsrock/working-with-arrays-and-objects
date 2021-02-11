@@ -80,11 +80,11 @@ function totalPopulation (obj) {
 
 //Code Here
 function ingredients (obj) {
-  let arr = []
+  
   const {carb} = obj;
   const {fat} = obj;
   const {protein} = obj;
-  return arr.push(obj)
+  return obj.push[obj]
   
 }
 
@@ -105,15 +105,12 @@ function ingredients (obj) {
 */
 
 //Code Here
-let objNums = {
-  first: [1,2,3,4],
-  second: [2,3,4,5,6,7],
-  third: [8,2,3,1,6,5,9,4]
+function largeNumbers (obj) {
+  const {first} = obj;
+  const {second} = obj;
+  const {third} = obj;
+  return Math.min(obj)
 }
-function largeNumbers({first, second, third}) {
- return objNums.max(first, second, third)
-}
-largeNumbers()
 
 
 ////////// PROBLEM 6 //////////
@@ -125,12 +122,7 @@ largeNumbers()
 */
 
 //Code Here
-let obj = {
-
-}
-function numberGroups(a, b, c) {
-for (let key in numberGroups){
-  return numberGroups.length
-}
+function numberGroups (a, b, c) {
+return Math.max[a, b, c]
 }
 

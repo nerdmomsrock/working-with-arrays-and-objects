@@ -148,6 +148,8 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 const bobsTotal = purchases.reduce((acc, element) => {
   if(element.owner === "Bob") {
     return acc += element.price;
+  }else {
+    return acc += 0
   }
-})
+}, 0)
   
