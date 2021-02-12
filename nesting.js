@@ -49,18 +49,20 @@ var employees = [
     2. If the employee's first name is Lorie, change her department to 'HR'.
     3. Return the updated employee array.
 */
-
+//employees[0]
 //Code Here
-function employeeUpdater () {
-  for (let key in employees) {
-    if (employees.firstName === "Theo"){
-      delete employees.firstName;
+function employeeUpdater() {
+  for (let i = 0; i < employees.length; i ++) {
+    if (employees[i].firstName === 'Theo') {
+      delete employees[i]
+    }else if(employees[i].firstName === 'Lorie'){
+      employees[i].department = 'HR'
     }
-    if (employees.firstName === "Lorie"){
-      employees.department = "HR"
-    }
-  } return employees
+  
+  }
+  return employees
 }
+
 
 
 
@@ -79,7 +81,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+function removeDuplicates() {
+  for (let i = 0; i <= workplaceAccidents.length; i ++) {
+    for(let j = 0; j <= workplaceAccidents.length; j ++){
+      if(workplaceAccidents[i] === workplaceAccidents[j] && i != j){
+        workplaceAccidents.splice(j, 1)
+      }
+    }
+}
+return workplaceAccidents
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -108,7 +119,9 @@ var cat = {
 
 //Code Here
 var grumpyActivity;
+grumpyActivity = cat['catFriends'][0].activities[1]
 var fluffy2ndFriend;
+fluffy2ndFriend = cat['catFriends'][1].name
 
 
 
@@ -149,7 +162,16 @@ var myCar = {
 */
 
 //Code Here
-
+function recordCleaner(){
+  for (let i = 0; i <= myCar['accidents'].length; i ++){
+    
+      if(myCar['accidents'][i].atFaultForAccident = true){
+        myCar['accidents'][i].atFaultForAccident = false
+      
+    
+  }
+}
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -168,5 +190,21 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
+function looper() {
+  for (i = 0; i <= numsArr.length; i ++){
+    for (j = 0; j <= numsArr[0].length; j ++) {
+      for (k = 0; k <= numsArr[1].length; k ++){
+        for (l = 0; l <= numsArr[2].length; l ++){
+          if (numsArr[i][j][k][l] %2 ===0){
+            numsArr[i][j][k][l] = 'even'
+          } else {
+            numsArr[i][j][k][l] = 'odd'
+          }
+        }
+      }
+    }
+  }
+  return numsArr
+}
+      
 

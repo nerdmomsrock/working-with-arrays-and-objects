@@ -80,11 +80,13 @@ function totalPopulation (obj) {
 
 //Code Here
 function ingredients (obj) {
-  
+  let arr = []
   const {carb} = obj;
   const {fat} = obj;
   const {protein} = obj;
-  return obj.push[obj]
+   arr.push(carb, fat, protein)
+   return arr
+   
   
 }
 
@@ -109,7 +111,7 @@ function largeNumbers (obj) {
   const {first} = obj;
   const {second} = obj;
   const {third} = obj;
-  return Math.min(obj)
+  return Math.min(first, second, third)
 }
 
 
@@ -122,7 +124,16 @@ function largeNumbers (obj) {
 */
 
 //Code Here
-function numberGroups (a, b, c) {
-return Math.max[a, b, c]
+function numberGroups (obj) {
+  const {a} = obj;
+  const {b} = obj;
+  const {c} = obj;
+  if (a > b && a > c) {
+    return a
+  }else if (b > a && b > c) {
+    return b
+  }else {
+    return c
+  }
 }
 
