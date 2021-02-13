@@ -163,11 +163,11 @@ var myCar = {
 
 //Code Here
 function recordCleaner(){
-  for (let i = 0; i <= myCar['accidents'].length; i ++){
-    for (let j = 0; j <= myCar[i]['accidents'].length; j ++)
+  for (let i = 0; i < myCar['accidents'].length; i ++){
+   
     
-      if(myCar[i]['accidents']['atFaultForAccident'] === true){
-        myCar[j]['accidents']['atFaultForAccidents'] = false
+      if(myCar['accidents'][i]['atFaultForAccident'] === true){
+        myCar['accidents'][i]['atFaultForAccident'] = false
       
     
   }
@@ -192,9 +192,9 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-function looper() {
-  for (i = 0; i <= numsArr.length; i ++){
-    for (j = 0; j <= numsArr[i].length; j ++) {
+ function looper() {
+  for (i = 0; i < numsArr.length; i ++){
+    for (j = 0; j < numsArr[i].length; j ++) {
       
           if (numsArr[i][j] % 2 === 0){
            numsArr[i][j] = 'even'
@@ -204,7 +204,7 @@ function looper() {
         }
       }
       return numsArr
-    }
+    } 
   
  
 
